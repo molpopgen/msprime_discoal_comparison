@@ -9,7 +9,7 @@ for (i in c(1, 100, 500, 1000))
     m = scan(mspfile, quiet=TRUE)
     d = scan(dscfile, quiet=TRUE)
 
-    plot(ecdf(m), main=paste("Initial freq = ", i/1e4), xlim=c(2500,5000))
+    plot(ecdf(m), main=paste("Initial freq = ", 0.5*i/1e4), xlim=c(2500,5000))
     lines(ecdf(d), col="blue")
     lines(ecdf(mn), col="red")
 
