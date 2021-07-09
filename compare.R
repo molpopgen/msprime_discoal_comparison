@@ -13,6 +13,6 @@ for (i in c(1, 100, 500, 1000))
     lines(ecdf(d), col="blue")
     lines(ecdf(mn), col="red")
 
-    print(paste(i, i/1e4, mean(m), mean(d), ks.test(m, d)$p.value))
+    print(paste(i, 0.5*i/1e4, mean(m), mean(d), ks.test(m, d)$p.value))
 }
 
